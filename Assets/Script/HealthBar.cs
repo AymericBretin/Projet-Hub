@@ -11,7 +11,7 @@ public class HealthBar : MonoBehaviour
         
     }
 
-    // Update is called once per frame
+    // Update is called onc
     void Update()
     {
         
