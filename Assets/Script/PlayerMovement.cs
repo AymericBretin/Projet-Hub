@@ -12,18 +12,22 @@ public class PlayerMovement : MonoBehaviour
     private float inputX;
     public Animator anim;
     public CircleCollider2D Feet;
+
+    public StartGame startGame;
     void Update()
     {
-        inputX = Input.GetAxis("Horizontal");
+        if (startGame.start == true) {
+            inputX = Input.GetAxis("Horizontal");
 
-        if (Input.GetButtonDown("Jump") && onFloor == true) {
-            rb.velocity = new Vector2(rb.velocity.x, jump);
-            onFloor = false;
+            if (Input.GetButtonDown("Jump") && onFloor == true) {
+                rb.velocity = new Vector2(rb.velocity.x, jump);
+                onFloor = false;
+            }
+
+            anim.SetFloat("Move", Mathf.Abs(inputX));
+            rb.velocity = new Vector2(inputX * speed, rb.velocity.y);
+            Flip();
         }
-
-        anim.SetFloat("Move", Mathf.Abs(inputX));
-        rb.velocity = new Vector2(inputX * speed, rb.velocity.y);
-        Flip();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
