@@ -427,7 +427,7 @@ GameObject:
   - component: {fileID: 5468681743878447752}
   m_Layer: 0
   m_Name: Player Folder
-  m_TagString: Untagged
+  m_TagString: Player Folder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
