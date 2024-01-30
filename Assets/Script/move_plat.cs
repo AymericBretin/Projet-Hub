@@ -10,11 +10,6 @@ public class move_plat : MonoBehaviour
     public Rigidbody2D rb;
     public GameObject max;
     public GameObject min;
-    void Start()
-    {
-
-    }
-
     void Update()
     {
         if (pass == 0) {
