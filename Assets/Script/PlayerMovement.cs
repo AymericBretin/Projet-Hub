@@ -11,7 +11,6 @@ public class PlayerMovement : MonoBehaviour
     private bool isFacingRight = true;
     private float inputX;
     public Animator anim;
-    public CircleCollider2D Feet;
 
     public StartGame startGame;
     void Update()
@@ -32,17 +31,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (Feet.gameObject.tag == "Ground") {
+        if (other.gameObject.tag == "Ground") {
             onFloor = true;
-        } else {
-            onFloor = false;
         }
     }
 
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        onFloor = false;
-    }
 
     private void Flip()
     {
