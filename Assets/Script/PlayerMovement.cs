@@ -8,22 +8,46 @@ public class PlayerMovement : MonoBehaviour
     public float jump = 10;
     public Rigidbody2D rb;
     public bool onFloor = false;
+    private bool isFacingRight = true;
+    private float inputX;
+    public Animator anim;
+    public CircleCollider2D Feet;
     void Update()
     {
-        float inputX = Input.GetAxis("Horizontal");
+        inputX = Input.GetAxis("Horizontal");
 
         if (Input.GetButtonDown("Jump") && onFloor == true) {
             rb.velocity = new Vector2(rb.velocity.x, jump);
             onFloor = false;
         }
 
+        anim.SetFloat("Move", Mathf.Abs(inputX));
         rb.velocity = new Vector2(inputX * speed, rb.velocity.y);
+        Flip();
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.gameObject.tag == "Ground") {
+        if (Feet.gameObject.tag == "Ground") {
             onFloor = true;
+        } else {
+            onFloor = false;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        onFloor = false;
+    }
+
+    private void Flip()
+    {
+        if (isFacingRight && inputX < 0f || !isFacingRight && inputX > 0f)
+        {
+            isFacingRight = !isFacingRight;
+            Vector3 localScale = transform.localScale;
+            localScale.x *= -1f;
+            transform.localScale = localScale;
         }
     }
 
