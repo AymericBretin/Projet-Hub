@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Kill_area : MonoBehaviour
 {
-    public GameObject Player;
     public GameObject Check_point;
     void Start()
     {
