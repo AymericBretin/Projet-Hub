@@ -10,6 +10,11 @@ public class move_plat : MonoBehaviour
     public Rigidbody2D rb;
     public GameObject max;
     public GameObject min;
+    public GameObject Player;
+    void Start()
+    {
+        Player = GameObject.FindGameObjectWithTag("Player Folder");
+    }
     void Update()
     {
         if (pass == 0) {
@@ -24,5 +29,10 @@ public class move_plat : MonoBehaviour
         if (min.transform.position.y > rb.transform.position.y) {
             pass = 0;
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        Player.transform.parent = gameObject.transform;
     }
 }
