@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Ground
   - Kill
+  - Coin
+  - Player Folder
   layers:
   - Default
   - TransparentFX

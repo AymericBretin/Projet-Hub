@@ -33,6 +33,6 @@ public class move_plat : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Player.transform.parent = gameObject.transform;
+        other.transform.SetParent(transform);
     }
 }
