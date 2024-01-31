@@ -12,7 +12,6 @@ public class WeakSpot : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             count = 1;
-            print("touché");
             Death.SetBool("Death", true);
             Destroy(GetComponent<BoxCollider2D>());
             Destroy(parent.GetComponent<BoxCollider2D>());
