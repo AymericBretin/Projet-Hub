@@ -8,6 +8,7 @@ public class Coin : MonoBehaviour
 {
     public int nb_coin = 0;
     public TMP_Text moneyCounter;
+    public int Time = 0;
     void Start()
     {
         
@@ -19,9 +20,17 @@ public class Coin : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Coin") {
+        if (other.gameObject.tag == "Coin"  && Time == 0) {
+            Time = 1;
             nb_coin += 1;
             Destroy(other.gameObject);
+            StartCoroutine(Timer());
         }
+    }
+
+    IEnumerator Timer()
+    {
+        yield return new WaitForSeconds(0.5f);
+        Time = 0;
     }
 }
