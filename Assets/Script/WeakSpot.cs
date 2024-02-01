@@ -6,6 +6,7 @@ public class WeakSpot : MonoBehaviour
     public Animator Death;
     public GameObject objectparent;
     public GameObject parent;
+    public GameObject deathzone;
     public int count = 0;
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -15,13 +16,14 @@ public class WeakSpot : MonoBehaviour
             Death.SetBool("Death", true);
             Destroy(GetComponent<BoxCollider2D>());
             Destroy(parent.GetComponent<BoxCollider2D>());
+            Destroy_death();
             StartCoroutine(myCoroutine());
         }
     }
 
     public void Destroy_death()
     {
-       Destroy(objectparent);
+       Destroy(deathzone);
     }
     
     IEnumerator myCoroutine ()
