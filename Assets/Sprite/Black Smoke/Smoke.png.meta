@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 695768e86d69cc1439eff5f17e3d50a5
+guid: 320c8c8d7b853134097697b623950273
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -81,6 +81,19 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -106,30 +119,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: icicle_0
+      name: Smoke_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 33
-        width: 29
-        height: 15
+        x: 0
+        y: 512
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1313296f5bfb7ff48a234118600d5276
-      internalID: -675121146
+      spriteID: fd011d920a1b1054fb8a58d4cf33a8c4
+      internalID: 1067151924
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icicle_1
+      name: Smoke_1
       rect:
         serializedVersion: 2
-        x: 34
-        y: 29
-        width: 29
-        height: 19
+        x: 256
+        y: 512
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fbbdbbdb7de6d34409b0bf8a024c388d
-      internalID: 1433148180
+      spriteID: 346ae84ba0881c94f98e1fee895749eb
+      internalID: 215816070
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icicle_2
+      name: Smoke_2
       rect:
         serializedVersion: 2
-        x: 66
-        y: 22
-        width: 29
-        height: 26
+        x: 512
+        y: 512
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5aebab2fc302a3439815b6408d08d3c
-      internalID: 633531012
+      spriteID: f549632dc37e1d347af48981c7c20de3
+      internalID: 325971912
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icicle_3
+      name: Smoke_3
       rect:
         serializedVersion: 2
-        x: 98
-        y: 22
-        width: 29
-        height: 26
+        x: 768
+        y: 512
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8effc8bfcb8be944bab19a8f4be45acc
-      internalID: 824768055
+      spriteID: afddbd7523822d647a7ae184cdebc0f1
+      internalID: -1935410265
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icicle_4
+      name: Smoke_4
       rect:
         serializedVersion: 2
-        x: 130
-        y: 22
-        width: 29
-        height: 26
+        x: 1024
+        y: 512
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ac27926f9b78764cbdb0a5a0db83077
-      internalID: -660573246
+      spriteID: 33802aacab553844d8b3aebfa06632a6
+      internalID: 646655742
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icicle_5
+      name: Smoke_5
       rect:
         serializedVersion: 2
-        x: 162
-        y: 22
-        width: 29
-        height: 26
+        x: 0
+        y: 256
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,20 +242,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c3b25a9eecf53c4b8b3679b2bbfa50d
-      internalID: 1247992657
+      spriteID: 55678a51ba0c66a45804d323c8e81aaf
+      internalID: -964373689
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icicle_6
+      name: Smoke_6
       rect:
         serializedVersion: 2
-        x: 194
-        y: 39
-        width: 29
-        height: 9
+        x: 256
+        y: 256
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,20 +263,83 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 620e15ce950f948409941cb2f110fe3b
-      internalID: 766980096
+      spriteID: fcf5bb652b9ee4544b36ee43ca57bff4
+      internalID: -1407292903
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icicle_7
+      name: Smoke_7
       rect:
         serializedVersion: 2
-        x: 203
+        x: 512
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68647b6e0f40fc8479614ca994a3a45e
+      internalID: 1075467060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke_8
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b917ac56ce831af49b99f7bb15027bc2
+      internalID: 166451719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke_9
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 972f7ba5248b0ff4ba4976ec55dfa8ee
+      internalID: 1173730053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke_10
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 0
-        width: 12
-        height: 21
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,20 +347,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef346d0328951454180a03ae63d60fa8
-      internalID: -1854514649
+      spriteID: a9899da8c4c7b3247b6538907f22f8a4
+      internalID: -1416393334
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icicle_8
+      name: Smoke_11
       rect:
         serializedVersion: 2
-        x: 234
+        x: 256
         y: 0
-        width: 14
-        height: 21
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -305,50 +368,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85beb4b482b86cb49b92af3103ed2b1b
-      internalID: -1990841051
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: icicle_9
-      rect:
-        serializedVersion: 2
-        x: 263
-        y: 9
-        width: 4
-        height: 4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 29b178354ec81314a93a47b673451865
-      internalID: 850193547
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: icicle_10
-      rect:
-        serializedVersion: 2
-        x: 265
-        y: 0
-        width: 19
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7fefdb261bde53446bdac391072d4491
-      internalID: -823213436
+      spriteID: f700bdf87c0a3244b9b3653acdcbcb62
+      internalID: 510396527
       vertices: []
       indices: 
       edges: []
@@ -364,17 +385,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      icicle_0: -675121146
-      icicle_1: 1433148180
-      icicle_10: -823213436
-      icicle_2: 633531012
-      icicle_3: 824768055
-      icicle_4: -660573246
-      icicle_5: 1247992657
-      icicle_6: 766980096
-      icicle_7: -1854514649
-      icicle_8: -1990841051
-      icicle_9: 850193547
+      Smoke_0: 1067151924
+      Smoke_1: 215816070
+      Smoke_10: -1416393334
+      Smoke_11: 510396527
+      Smoke_2: 325971912
+      Smoke_3: -1935410265
+      Smoke_4: 646655742
+      Smoke_5: -964373689
+      Smoke_6: -1407292903
+      Smoke_7: 1075467060
+      Smoke_8: 166451719
+      Smoke_9: 1173730053
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
