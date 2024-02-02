@@ -34,18 +34,33 @@ public class CheckEndLevel : MonoBehaviour
         } else if (other.name == "Complete Level 2 World 1")
         {
             gameManager.Level_End = 3;
+            animation.SetBool("End", true);
+            Debug.Log("Find");
+            StartCoroutine(BackMap());
         } else if (other.name == "Complete Level 3 World 1")
         {
             gameManager.Level_End = 4;
+            animation.SetBool("End", true);
+            Debug.Log("Find");
+            StartCoroutine(BackMap());
         } else if (other.name == "Complete Level 4 World 1")
         {
             gameManager.Level_End = 5;
+            animation.SetBool("End", true);
+            Debug.Log("Find");
+            StartCoroutine(BackMap());
         } else if (other.name == "Complete Level 5 World 1")
         {
             gameManager.Level_End = 6;
+            animation.SetBool("End", true);
+            Debug.Log("Find");
+            StartCoroutine(BackMap());
         } else if (other.name == "Complete Level 6 World 1")
         {
             gameManager.Level_End = 7;
+            animation.SetBool("End", true);
+            Debug.Log("Find");
+            StartCoroutine(BackMap());
         }
     }
 

@@ -11,6 +11,7 @@ public class PauseMenu : MonoBehaviour
     
     void Update()
     {
+        startGame = FindObjectOfType<StartGame>();
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (gamePaused)
@@ -40,8 +41,13 @@ public class PauseMenu : MonoBehaviour
         gamePaused = false;
     }
 
-/*    public void loadmenu()
+    public void MainMenu()
     {
-        SceneManager.LoadScene("MainMenu");
-    }*/
+        SceneManager.LoadScene("Scenes/Menu/Menu", LoadSceneMode.Single);
+    }
+
+    public void WorldLevel()
+    {
+        SceneManager.LoadScene("Scenes/Map/Carte", LoadSceneMode.Single);
+    }
 }

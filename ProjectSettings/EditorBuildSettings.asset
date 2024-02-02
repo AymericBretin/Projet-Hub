@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Map/Carte.unity
     guid: e132a623a3951e84f8c4fe8fc882277a
+  - enabled: 1
+    path: Assets/Scenes/monde 1/level_4.unity
+    guid: 70cfe78c77992ed42b6ea1e9af5b545e
   m_configObjects: {}

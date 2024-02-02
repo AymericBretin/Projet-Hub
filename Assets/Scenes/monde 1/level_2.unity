@@ -24234,6 +24234,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Folder
       objectReference: {fileID: 0}
+    - target: {fileID: 8432342885886712464, guid: 41666da22f3f57746b57856f56ea0eef, type: 3}
+      propertyPath: m_AngularDrag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432342885886712464, guid: 41666da22f3f57746b57856f56ea0eef, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
