@@ -6,23 +6,33 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public string[] scenePaths;
-    // Start is called before the first frame update
+
+    public MoveOnMap moveOnMap;
+
+    public GameObject playerMap;
+
+    public GameObject player;
+
+    public int Level_End = 1;
+
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        playerMap = GameObject.Find("PlayerMap");
+        moveOnMap = FindObjectOfType<MoveOnMap>();
         DontDestroyOnLoad(gameObject);
     }
 
     public void PressStart()
     {
-        StartCoroutine(myCoroutine());
+        StartCoroutine(GoCinematique());
     }
-    IEnumerator myCoroutine ()
+    IEnumerator GoCinematique ()
     {
         SceneManager.LoadScene(scenePaths[1], LoadSceneMode.Single);
         yield return new WaitForSeconds(3);

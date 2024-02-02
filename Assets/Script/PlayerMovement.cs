@@ -21,6 +21,9 @@ public class PlayerMovement : MonoBehaviour
             if (Input.GetButtonDown("Jump") && onFloor == true) {
                 rb.velocity = new Vector2(rb.velocity.x, jump);
                 onFloor = false;
+            } else if (Input.GetButtonDown("Jump2") && onFloor == true) {
+                rb.velocity = new Vector2(rb.velocity.x, jump);
+                onFloor = false;
             }
 
             anim.SetFloat("Move", Mathf.Abs(inputX));

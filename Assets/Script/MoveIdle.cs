@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MoveIdle : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class MoveIdle : MonoBehaviour
     public Animator Dino2;
     public Animator Dino3;
     public Animator Dino4;
+    public string[] scenePaths;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +19,9 @@ public class MoveIdle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetButtonDown("Jump")) {
+                End();
+        }
     }
 
     void SetIdle()
@@ -31,5 +35,10 @@ public class MoveIdle : MonoBehaviour
     void RmIdle()
     {
         Dino1.SetBool("Idle", false);
+    }
+
+    public void End()
+    {
+        SceneManager.LoadScene(scenePaths[1], LoadSceneMode.Single);
     }
 }

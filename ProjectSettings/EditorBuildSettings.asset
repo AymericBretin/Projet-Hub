@@ -17,4 +17,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu/Chargement.unity
     guid: aa07defab5cd95b469f27fca4d99b71a
+  - enabled: 1
+    path: Assets/Scenes/monde 1/level_1.unity
+    guid: f7fe52141ca65a644b3b8cafee295be4
+  - enabled: 1
+    path: Assets/Scenes/monde 1/level_2.unity
+    guid: 1de93f5342cd5a24d88d5e4536c41213
+  - enabled: 1
+    path: Assets/Scenes/monde 1/level_3.unity
+    guid: 79dcd7bb3d253a34a8eef9a2ddc45116
+  - enabled: 1
+    path: Assets/Scenes/Map/Carte.unity
+    guid: e132a623a3951e84f8c4fe8fc882277a
   m_configObjects: {}
