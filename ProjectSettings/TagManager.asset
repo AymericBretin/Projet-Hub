@@ -8,6 +8,7 @@ TagManager:
   - Kill
   - Coin
   - Player Folder
+  - PlayerGrav
   layers:
   - Default
   - TransparentFX

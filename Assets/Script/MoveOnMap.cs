@@ -28,31 +28,13 @@ public class MoveOnMap : MonoBehaviour
             Destroy(this);
         }
         instance = this;
-        Level_Unlock = gameManager.Level_End;
-        if (Level_Unlock >= 2) {
-            Cadenas[0].SetActive(false);
+        if (Level_Unlock < gameManager.Level_End)
+        {
+            Level_Unlock = gameManager.Level_End;
         }
-        if (Level_Unlock >= 3) {
-            Cadenas[0].SetActive(false);
-            Cadenas[1].SetActive(false);
-        }
-        if (Level_Unlock >= 4) {
-            Cadenas[0].SetActive(false);
-            Cadenas[1].SetActive(false);
-            Cadenas[2].SetActive(false);
-        }
-        if (Level_Unlock >= 5) {
-            Cadenas[0].SetActive(false);
-            Cadenas[1].SetActive(false);
-            Cadenas[2].SetActive(false);
-            Cadenas[3].SetActive(false);
-        }
-        if (Level_Unlock >= 6) {
-            Cadenas[0].SetActive(false);
-            Cadenas[1].SetActive(false);
-            Cadenas[2].SetActive(false);
-            Cadenas[3].SetActive(false);
-            Cadenas[4].SetActive(false);
+        for (int i = 0; i <= Level_Unlock - 2; i++)
+        {
+            Cadenas[i].SetActive(false);
         }
     }
 
