@@ -9,10 +9,12 @@ public class move_ca : MonoBehaviour
     public StartGame startGame;
     public HealthBar healtBar;
     private int cont = 0;
+    private int health_point = 0;
     void Start()
     {
         Vector2 player_pos = Player.transform.position;
         speed = player_pos.x;
+        health_point = healtBar.Health;
     }
 
     void FixedUpdate()
@@ -21,10 +23,10 @@ public class move_ca : MonoBehaviour
             speed += 0.1f;
             transform.position = new Vector3(speed, -0.7880001f, -10f);
         }
-        if (healtBar.Health == 1 && cont == 0) {
+        if (health_point != healtBar.Health) {
             Vector2 player_pos = Player.transform.position;
             speed = player_pos.x;
-            cont += 1;
+            health_point = healtBar.Health;
         }
 
     }
