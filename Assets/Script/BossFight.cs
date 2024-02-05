@@ -11,6 +11,7 @@ public class BossFight : MonoBehaviour
     public Animator RightSpike;
     public Animator FloorSpike;
     public Animator ExplosionSpike;
+    public Animator BossWalk;
     public int randomNumber;
     public int SaveNb = -1;
     // Start is called before the first frame update
@@ -27,27 +28,31 @@ public class BossFight : MonoBehaviour
 
     public void NewNumber()
     {
-        randomNumber = Random.Range(0, 5);
+        randomNumber = Random.Range(0, 6);
         if (randomNumber == SaveNb) {
             NewNumber();
+        } else {
+            SaveNb = randomNumber;
+            if (randomNumber == 0) {
+                RainSpike.SetBool("Start", true);
+            }
+            if (randomNumber == 1) {
+                LeftSpike.SetBool("Start", true);
+            }
+            if (randomNumber == 2) {
+                RightSpike.SetBool("Start", true);
+            }
+            if (randomNumber == 3) {
+                FloorSpike.SetBool("Start", true);
+            }
+            if (randomNumber == 4) {
+                ExplosionSpike.SetBool("Start", true);
+            }
+            if (randomNumber == 5) {
+                BossWalk.SetBool("Start", true);
+            }
+            StartCoroutine(Timer());
         }
-        SaveNb = randomNumber;
-        if (randomNumber == 0) {
-            RainSpike.SetBool("Start", true);
-        }
-        if (randomNumber == 1) {
-            LeftSpike.SetBool("Start", true);
-        }
-        if (randomNumber == 2) {
-            RightSpike.SetBool("Start", true);
-        }
-        if (randomNumber == 3) {
-            FloorSpike.SetBool("Start", true);
-        }
-        if (randomNumber == 4) {
-            ExplosionSpike.SetBool("Start", true);
-        }
-        StartCoroutine(Timer());
     }
 
     IEnumerator Timer()
@@ -58,5 +63,6 @@ public class BossFight : MonoBehaviour
         RightSpike.SetBool("Start", false);
         LeftSpike.SetBool("Start", false);
         RainSpike.SetBool("Start", false);
+        BossWalk.SetBool("Start", false);
     }
 }

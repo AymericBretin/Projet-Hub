@@ -22,4 +22,14 @@ public class AnimBossFight : MonoBehaviour
         Debug.Log("New");
         bossFight.NewNumber();
     }
+
+    public void Hide()
+    {
+        gameObject.SetActive(false);
+    }
+
+    public void Show()
+    {
+        gameObject.SetActive(true);
+    }
 }
