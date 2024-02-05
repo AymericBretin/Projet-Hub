@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Kill_area : MonoBehaviour
 {
@@ -41,6 +42,9 @@ public class Kill_area : MonoBehaviour
             healthBar.Health -= 1;
             other.transform.position = new Vector3 (Check_point.transform.position.x, Check_point.transform.position.y, Check_point.transform.position.z);
             StartCoroutine(Timer());
+        }
+        if (healthBar.Health == -1) {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 

@@ -5,7 +5,7 @@ using UnityEngine;
 public class LinkCamera : MonoBehaviour
 {
     public GameObject Player;
-    void Update()
+    void FixedUpdate()
     {
         Vector2 player_pos = Player.transform.position;
         transform.position = new Vector3(player_pos.x, -0.7880001f, -10f);
