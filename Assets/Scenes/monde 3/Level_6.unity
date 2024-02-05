@@ -848,6 +848,7 @@ GameObject:
   m_Component:
   - component: {fileID: 48516023}
   - component: {fileID: 48516022}
+  - component: {fileID: 48516024}
   m_Layer: 0
   m_Name: Spike Explosion
   m_TagString: Untagged
@@ -899,6 +900,19 @@ Transform:
   - {fileID: 698433232}
   m_Father: {fileID: 583182282}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &48516024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48516021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 771f2bf2cb002d24e881864531a61fce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bossFight: {fileID: 583182283}
 --- !u!1 &52536319
 GameObject:
   m_ObjectHideFlags: 0
@@ -3192,6 +3206,7 @@ GameObject:
   m_Component:
   - component: {fileID: 252157381}
   - component: {fileID: 252157380}
+  - component: {fileID: 252157382}
   m_Layer: 0
   m_Name: Spike Left
   m_TagString: Untagged
@@ -3243,6 +3258,19 @@ Transform:
   - {fileID: 868390080}
   m_Father: {fileID: 583182282}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &252157382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252157379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 771f2bf2cb002d24e881864531a61fce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bossFight: {fileID: 583182283}
 --- !u!1 &265698504
 GameObject:
   m_ObjectHideFlags: 0
@@ -6969,6 +6997,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 583182282}
+  - component: {fileID: 583182283}
   m_Layer: 0
   m_Name: Boss Attack
   m_TagString: Untagged
@@ -6996,6 +7025,25 @@ Transform:
   - {fileID: 48516023}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &583182283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583182281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cd047aae4916354a97d00dbdcbd4b9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RainSpike: {fileID: 2009829169}
+  LeftSpike: {fileID: 252157380}
+  RightSpike: {fileID: 1579441804}
+  FloorSpike: {fileID: 1908177685}
+  ExplosionSpike: {fileID: 48516022}
+  randomNumber: 0
+  SaveNb: -1
 --- !u!1 &588814621
 GameObject:
   m_ObjectHideFlags: 0
@@ -18059,6 +18107,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1579441805}
   - component: {fileID: 1579441804}
+  - component: {fileID: 1579441806}
   m_Layer: 0
   m_Name: Spike Right
   m_TagString: Untagged
@@ -18110,6 +18159,19 @@ Transform:
   - {fileID: 1974651925}
   m_Father: {fileID: 583182282}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1579441806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579441803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 771f2bf2cb002d24e881864531a61fce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bossFight: {fileID: 583182283}
 --- !u!1 &1586771209
 GameObject:
   m_ObjectHideFlags: 0
@@ -20746,6 +20808,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1908177686}
   - component: {fileID: 1908177685}
+  - component: {fileID: 1908177687}
   m_Layer: 0
   m_Name: Spike Folder
   m_TagString: Untagged
@@ -20819,6 +20882,19 @@ Transform:
   - {fileID: 1607102572}
   m_Father: {fileID: 583182282}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1908177687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908177684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 771f2bf2cb002d24e881864531a61fce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bossFight: {fileID: 583182283}
 --- !u!1 &1913934760
 GameObject:
   m_ObjectHideFlags: 0
@@ -21498,6 +21574,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2009829170}
   - component: {fileID: 2009829169}
+  - component: {fileID: 2009829171}
   m_Layer: 0
   m_Name: Spike Rain
   m_TagString: Untagged
@@ -21549,6 +21626,19 @@ Transform:
   - {fileID: 395361571}
   m_Father: {fileID: 583182282}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2009829171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009829168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 771f2bf2cb002d24e881864531a61fce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bossFight: {fileID: 583182283}
 --- !u!1 &2023201904
 GameObject:
   m_ObjectHideFlags: 0

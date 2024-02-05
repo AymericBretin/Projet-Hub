@@ -35748,6 +35748,7 @@ MonoBehaviour:
   Health: 2
   FullHearth1: {fileID: 8921299621337393757}
   FullHearth2: {fileID: 5564302181804376598}
+  FullHearth3: {fileID: 8921299621337393757}
 --- !u!224 &5624870575845722781
 RectTransform:
   m_ObjectHideFlags: 0
