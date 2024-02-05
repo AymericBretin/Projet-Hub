@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4d8f1354ded9a6f48ab0a48844b3ce00
+guid: 309097feaebd60842bc444a2960e699c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,202 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tornado_0
+      name: flying_twin_headed_dragon-blue_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 144
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c1e3219b938c4c48bb748e6b8205162
+      internalID: 1329354142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flying_twin_headed_dragon-blue_1
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 384
+        width: 144
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b88b5ae8db46bc641b4376637aede2ce
+      internalID: -52871720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flying_twin_headed_dragon-blue_2
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 384
+        width: 144
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da1010659aaee414ea834d1ef15853d1
+      internalID: 497992809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flying_twin_headed_dragon-blue_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 144
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd737294d6719114e9ea30834f1ec91b
+      internalID: 1206022758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flying_twin_headed_dragon-blue_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 256
+        width: 144
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5240917855cfa6745bdb7e1f3e2d218c
+      internalID: 10926270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flying_twin_headed_dragon-blue_5
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 256
+        width: 144
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f644e3bc69e521848b559e6898341e76
+      internalID: -1527971972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flying_twin_headed_dragon-blue_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 144
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ce5273e893dd3f429b017a07bafc6e2
+      internalID: 2140800853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flying_twin_headed_dragon-blue_7
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 128
+        width: 144
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14cfd334f3b257840aa3bacc070ad440
+      internalID: 232670866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flying_twin_headed_dragon-blue_8
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 128
+        width: 144
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dde1cd1f17c87954a936d585baf04427
+      internalID: -844465503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flying_twin_headed_dragon-blue_9
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 48
-        height: 48
+        width: 144
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,62 +313,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea12e00b48cf62d44a8cdd0d534f6688
-      internalID: 955459843
+      spriteID: a01b7a820273be345a55e4871a113406
+      internalID: 643123250
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tornado_1
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0b2270aa46e966e47ade596e8035fcd6
-      internalID: -168068785
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tornado_2
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 444bf542e6c356043b370c09d1344579
-      internalID: 1326086640
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tornado_3
+      name: flying_twin_headed_dragon-blue_10
       rect:
         serializedVersion: 2
         x: 144
         y: 0
-        width: 48
-        height: 48
+        width: 144
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,62 +334,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae6fe026e1039f84981a936fad93fe0e
-      internalID: -340457509
+      spriteID: 7cc751bffe2ccd649baa2cfc5b9f3f19
+      internalID: -995790196
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tornado_4
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5a60079a2df0e664aa43bf110472b13a
-      internalID: -502613671
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tornado_5
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 630b569e9fe939e429e17d1e84d82177
-      internalID: -654134211
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tornado_6
+      name: flying_twin_headed_dragon-blue_11
       rect:
         serializedVersion: 2
         x: 288
         y: 0
-        width: 48
-        height: 48
+        width: 144
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,29 +355,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d245ae2288bcc764986d83fd1f341b8a
-      internalID: -239144315
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tornado_7
-      rect:
-        serializedVersion: 2
-        x: 336
-        y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e79605d3888bf6b4aa06cbef3dc99d5a
-      internalID: 611253343
+      spriteID: fe91b0954716df0489db222b8734ff8b
+      internalID: 1962595759
       vertices: []
       indices: 
       edges: []
@@ -288,14 +372,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      tornado_0: 955459843
-      tornado_1: -168068785
-      tornado_2: 1326086640
-      tornado_3: -340457509
-      tornado_4: -502613671
-      tornado_5: -654134211
-      tornado_6: -239144315
-      tornado_7: 611253343
+      flying_twin_headed_dragon-blue_0: 1329354142
+      flying_twin_headed_dragon-blue_1: -52871720
+      flying_twin_headed_dragon-blue_10: -995790196
+      flying_twin_headed_dragon-blue_11: 1962595759
+      flying_twin_headed_dragon-blue_2: 497992809
+      flying_twin_headed_dragon-blue_3: 1206022758
+      flying_twin_headed_dragon-blue_4: 10926270
+      flying_twin_headed_dragon-blue_5: -1527971972
+      flying_twin_headed_dragon-blue_6: 2140800853
+      flying_twin_headed_dragon-blue_7: 232670866
+      flying_twin_headed_dragon-blue_8: -844465503
+      flying_twin_headed_dragon-blue_9: 643123250
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

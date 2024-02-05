@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b8775e89af5a632469b9721f53f62ecf
+guid: 6a96b0d9f1ccb704d832423146fead34
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ice_spikes_0
+      name: bossspritesheet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 32
-        height: 16
+        y: 516
+        width: 480
+        height: 480
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 491a9f656fd133d458f40faf3a2eeec8
-      internalID: 651256864
+      spriteID: bb0ae6a8314e9e549865824480aff055
+      internalID: 118429561
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ice_spikes_1
+      name: bossspritesheet_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 16
+        x: 480
+        y: 516
+        width: 480
+        height: 480
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4745d220038ad84b9e4435b07113a46
-      internalID: -1552489338
+      spriteID: 73197c7f6c7eebb4da5efdc8440a3671
+      internalID: 378723440
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ice_spikes_2
+      name: bossspritesheet_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 16
+        x: 960
+        y: 516
+        width: 480
+        height: 480
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,8 +166,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af4f47ac263202b4dae4f136c69904fc
-      internalID: -1770393611
+      spriteID: 72d4c48615e1d624dab73e43809b4d13
+      internalID: -10492469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossspritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 516
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9683de503012754c822e133914e10ac
+      internalID: -1620587654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossspritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 516
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 923997d2d736e08449d4f0218f552047
+      internalID: -1889883564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossspritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 36
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0a8fb2c61a9a8340945cad9dfb1b356
+      internalID: -1989666291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossspritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 36
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3b2de3e8e701954ba5a84b2d9fe2c82
+      internalID: 917603075
       vertices: []
       indices: 
       edges: []
@@ -183,9 +267,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ice_spikes_0: 651256864
-      ice_spikes_1: -1552489338
-      ice_spikes_2: -1770393611
+      bossspritesheet_0: 118429561
+      bossspritesheet_1: 378723440
+      bossspritesheet_2: -10492469
+      bossspritesheet_3: -1620587654
+      bossspritesheet_4: -1889883564
+      bossspritesheet_5: -1989666291
+      bossspritesheet_6: 917603075
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

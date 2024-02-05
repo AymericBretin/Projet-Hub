@@ -30,7 +30,7 @@ public class Coin : MonoBehaviour
 
     IEnumerator Timer()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.1f);
         Time = 0;
     }
 }
