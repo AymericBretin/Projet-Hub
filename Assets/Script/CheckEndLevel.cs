@@ -53,6 +53,7 @@ public class CheckEndLevel : MonoBehaviour
         } else if (other.name == "Complete Level 6 World 1")
         {
             gameManager.Level_End = 7;
+            gameManager.world = 2;
             animation.SetBool("End", true);
             StartCoroutine(BackMap());
         } else if (other.name == "Complete Level 1 World 2")
@@ -83,6 +84,7 @@ public class CheckEndLevel : MonoBehaviour
         } else if (other.name == "Complete Level 6 World 2")
         {
             gameManager.Level_End = 13;
+            gameManager.world = 3;
             animation.SetBool("End", true);
             StartCoroutine(BackMap());
         } else if (other.name == "Complete Level 1 World 3")

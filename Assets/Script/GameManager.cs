@@ -6,14 +6,11 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public string[] scenePaths;
-
     public MoveOnMap moveOnMap;
-
     public GameObject playerMap;
-
     public GameObject player;
-
     public int Level_End = 1;
+    public int world = 1;
 
     void Start()
     {
