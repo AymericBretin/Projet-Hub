@@ -35,4 +35,46 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/monde 1/level_5.unity
     guid: a5b5204d1fa90d54d8bbc4f2188a02a2
+  - enabled: 1
+    path: Assets/Scenes/monde 1/level_6.unity
+    guid: 3518c797808f1c74e9ac5dfff135ee3e
+  - enabled: 1
+    path: Assets/Scenes/monde 2/level1.unity
+    guid: c08c2db9866184749b7965e3ddc7b587
+  - enabled: 1
+    path: Assets/Scenes/monde 2/level2.unity
+    guid: 6f9382424afd5b246bd1083ba4fad4c2
+  - enabled: 1
+    path: Assets/Scenes/monde 2/level3.unity
+    guid: b06399f09cc60af48b4e68dbc8dbcb5a
+  - enabled: 1
+    path: Assets/Scenes/monde 2/level4.unity
+    guid: d5e9e6a867a55b44da8a730ee2923719
+  - enabled: 1
+    path: Assets/Scenes/monde 2/level5.unity
+    guid: e18d10c28bda9dc4e9ba2b0107de8284
+  - enabled: 1
+    path: Assets/Scenes/monde 2/level6.unity
+    guid: 92bf7f70821bfcb42ba2a0457c42020c
+  - enabled: 1
+    path: Assets/Scenes/monde 2/world2BOSS.unity
+    guid: e9fac3a3f160b2746b174c7dbee93011
+  - enabled: 1
+    path: Assets/Scenes/monde 3/Level_1.unity
+    guid: 1afdc2b68dda4a54db7b2690eb64dad2
+  - enabled: 1
+    path: Assets/Scenes/monde 3/Level_2.unity
+    guid: 48c2e7ec13c5c394ea4676f971e1e9c3
+  - enabled: 1
+    path: Assets/Scenes/monde 3/Level_3.unity
+    guid: df5271142aa0c4b45b5e9faf11f69d2d
+  - enabled: 1
+    path: Assets/Scenes/monde 3/Level_4.unity
+    guid: 95489e33c40ce024aba1a726195851f6
+  - enabled: 1
+    path: Assets/Scenes/monde 3/Level_5.unity
+    guid: 58290bbb39feb684e8797c35440db182
+  - enabled: 1
+    path: Assets/Scenes/monde 3/Level_6.unity
+    guid: a46eb3c9333cebc48aa4bc14d42b06b4
   m_configObjects: {}

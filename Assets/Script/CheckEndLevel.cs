@@ -55,6 +55,66 @@ public class CheckEndLevel : MonoBehaviour
             gameManager.Level_End = 7;
             animation.SetBool("End", true);
             StartCoroutine(BackMap());
+        } else if (other.name == "Complete Level 1 World 2")
+        {
+            gameManager.Level_End = 8;
+            animation.SetBool("End", true);
+            StartCoroutine(BackMap());
+        } else if (other.name == "Complete Level 2 World 2")
+        {
+            gameManager.Level_End = 9;
+            animation.SetBool("End", true);
+            StartCoroutine(BackMap());
+        } else if (other.name == "Complete Level 3 World 2")
+        {
+            gameManager.Level_End = 10;
+            animation.SetBool("End", true);
+            StartCoroutine(BackMap());
+        } else if (other.name == "Complete Level 4 World 2")
+        {
+            gameManager.Level_End = 11;
+            animation.SetBool("End", true);
+            StartCoroutine(BackMap());
+        } else if (other.name == "Complete Level 5 World 2")
+        {
+            gameManager.Level_End = 12;
+            animation.SetBool("End", true);
+            StartCoroutine(BackMap());
+        } else if (other.name == "Complete Level 6 World 2")
+        {
+            gameManager.Level_End = 13;
+            animation.SetBool("End", true);
+            StartCoroutine(BackMap());
+        } else if (other.name == "Complete Level 1 World 3")
+        {
+            gameManager.Level_End = 14;
+            animation.SetBool("End", true);
+            StartCoroutine(BackMap());
+        } else if (other.name == "Complete Level 2 World 3")
+        {
+            gameManager.Level_End = 15;
+            animation.SetBool("End", true);
+            StartCoroutine(BackMap());
+        } else if (other.name == "Complete Level 3 World 3")
+        {
+            gameManager.Level_End = 16;
+            animation.SetBool("End", true);
+            StartCoroutine(BackMap());
+        } else if (other.name == "Complete Level 4 World 3")
+        {
+            gameManager.Level_End = 17;
+            animation.SetBool("End", true);
+            StartCoroutine(BackMap());
+        } else if (other.name == "Complete Level 5 World 3")
+        {
+            gameManager.Level_End = 18;
+            animation.SetBool("End", true);
+            StartCoroutine(BackMap());
+        } else if (other.name == "Complete Level 6 World 3")
+        {
+            gameManager.Level_End = 19;
+            animation.SetBool("End", true);
+            StartCoroutine(BackMap());
         }
     }
 
