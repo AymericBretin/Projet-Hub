@@ -54,7 +54,7 @@ public class CheckEndLevel : MonoBehaviour
         {
             gameManager.Level_End = 7;
             animation.SetBool("End", true);
-            StartCoroutine(BackMap());
+            StartCoroutine(SaveFriend1());
         } else if (other.name == "Complete Level 1 World 2")
         {
             gameManager.Level_End = 8;
@@ -84,7 +84,7 @@ public class CheckEndLevel : MonoBehaviour
         {
             gameManager.Level_End = 13;
             animation.SetBool("End", true);
-            StartCoroutine(BackMap());
+            StartCoroutine(SaveFriend2());
         } else if (other.name == "Complete Level 1 World 3")
         {
             gameManager.Level_End = 14;
@@ -114,7 +114,7 @@ public class CheckEndLevel : MonoBehaviour
         {
             gameManager.Level_End = 19;
             animation.SetBool("End", true);
-            StartCoroutine(BackMap());
+            StartCoroutine(SaveFriend3());
         }
     }
 
@@ -122,5 +122,22 @@ public class CheckEndLevel : MonoBehaviour
     {
         yield return new WaitForSeconds(3);
         SceneManager.LoadScene("Scenes/Map/Carte", LoadSceneMode.Single);
+    }
+    IEnumerator SaveFriend1 ()
+    {
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene("Scenes/Map/Find Friend 1", LoadSceneMode.Single);
+    }
+
+    IEnumerator SaveFriend2 ()
+    {
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene("Scenes/Map/Find Friend 2", LoadSceneMode.Single);
+    }
+
+    IEnumerator SaveFriend3 ()
+    {
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene("Scenes/Map/Find Friend 3", LoadSceneMode.Single);
     }
 }
