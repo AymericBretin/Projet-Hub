@@ -23,7 +23,7 @@ public class ChangeGravity : MonoBehaviour
     public void ResetGravity()
     {
         Player.transform.rotation = Quaternion.Euler(0, 0, 0);
-        Debug.Log("Basic Grav");
+        Debug.Log("Reset Grav");
         Grav = 0;
         rb.gravityScale = 3;
         playerMovement.jump = 12;

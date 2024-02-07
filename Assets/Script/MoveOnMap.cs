@@ -21,6 +21,7 @@ public class MoveOnMap : MonoBehaviour
     public string[] scenePaths;
     public GameManager gameManager;
     public GameObject[] Cadenas;
+    public GameObject World1, World2, World3;
     void Start()
     {
         gameManager = FindObjectOfType<GameManager>();
@@ -35,6 +36,21 @@ public class MoveOnMap : MonoBehaviour
         for (int i = 0; i <= Level_Unlock - 2; i++)
         {
             Cadenas[i].SetActive(false);
+        }
+        if (gameManager.world == 1) {
+            World1.SetActive(true);
+            World2.SetActive(false);
+            World3.SetActive(false);
+        }
+        if (gameManager.world == 2) {
+            World1.SetActive(false);
+            World2.SetActive(true);
+            World3.SetActive(false);
+        }
+        if (gameManager.world == 3) {
+            World1.SetActive(false);
+            World2.SetActive(false);
+            World3.SetActive(true);
         }
     }
 

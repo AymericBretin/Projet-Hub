@@ -9,6 +9,9 @@ public class ShadowBossHit : MonoBehaviour
     public int BossHealth = 3;
     public int BossHit = 0;
     public bool CondiAttack = true;
+    public Animator BossWalk;
+    public BossFight bossFight;
+    public Animator Explo;
 
     // Start is called before the first frame update
     void Start()
@@ -46,16 +49,24 @@ public class ShadowBossHit : MonoBehaviour
         {
             CondiAttack = false;
             Debug.Log("HIT");
+            BossWalk.SetBool("Hit", true);
             BossHealth -= 1;
-            HitSmoke.SetBool("Hit", true);
+            if (BossHealth != 0) {
+                HitSmoke.SetBool("Hit", true);
+            } else {
+                Explo.SetBool("Start", true);
+                return;
+            }
+            bossFight.NewNumber();
             StartCoroutine(Timer());
         }
     }
 
     IEnumerator Timer()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
         CondiAttack = true;
+        BossWalk.SetBool("Hit", false);
         HitSmoke.SetBool("Hit", false);
     }
 }

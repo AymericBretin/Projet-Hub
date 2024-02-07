@@ -75,6 +75,12 @@ EditorBuildSettings:
     path: Assets/Scenes/monde 3/Level_5.unity
     guid: 58290bbb39feb684e8797c35440db182
   - enabled: 1
-    path: Assets/Scenes/monde 3/Level_6.unity
+    path: Assets/Scenes/monde 3/Boss World 3.unity
     guid: a46eb3c9333cebc48aa4bc14d42b06b4
+  - enabled: 1
+    path: Assets/Scenes/monde 1/transi.unity
+    guid: d2cac205f294f6143ad99996ae372aea
+  - enabled: 1
+    path: Assets/Scenes/monde 3/Level_6.unity
+    guid: 07be2e15de7d4de41b7f593976938594
   m_configObjects: {}

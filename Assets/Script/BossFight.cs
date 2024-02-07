@@ -12,57 +12,105 @@ public class BossFight : MonoBehaviour
     public Animator FloorSpike;
     public Animator ExplosionSpike;
     public Animator BossWalk;
+    public Animator Drop;
     public int randomNumber;
+    public int randomNumber2;
     public int SaveNb = -1;
+    public int NbAttack = 0;
+    public bool StartBool = false;
+    public StartGame startGame;
+    public bool PlayerCanBeHit = true;
+    public int Phase = 0;
+    public ShadowBossHit shadowBossHit;
+    public ShadowVesselHit shadowVesselHit;
     // Start is called before the first frame update
     void Start()
     {
-        NewNumber();
+        shadowBossHit = FindObjectOfType<ShadowBossHit>();
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        if (StartBool == false && startGame.start == true) {
+            Debug.Log("Start");
+            NewNumber();
+            StartBool = true;
+        }
     }
 
     public void NewNumber()
     {
-        randomNumber = Random.Range(0, 6);
-        if (randomNumber == SaveNb) {
-            NewNumber();
+        Debug.Log("New Number" + Phase);
+        PlayerCanBeHit = true;
+        if (shadowVesselHit.EndBoss == false) {
+            if (NbAttack <= 3) {
+            if (Phase == 0) {
+                randomNumber = Random.Range(0, 3);
+            }
+            if (Phase == 1) {
+                randomNumber = Random.Range(0, 5);
+            }
+            if (randomNumber == SaveNb) {
+                Debug.Log("Same");
+                NewNumber();
+                return;
+            } else {
+                SaveNb = randomNumber;
+                Debug.Log("Save " + SaveNb);
+                if (randomNumber == 0) {
+                    RainSpike.SetBool("Start", true);
+                }
+                if (randomNumber == 1) {
+                    ExplosionSpike.SetBool("Start", true);
+                }
+                if (randomNumber == 2) {
+                    FloorSpike.SetBool("Start", true);
+                }
+                if (randomNumber == 3) {
+                    RightSpike.SetBool("Start", true);
+                }
+                if (randomNumber == 4) {
+                    LeftSpike.SetBool("Start", true);
+                }
+                NbAttack += 1;
+                StartCoroutine(Timer());
+            }
         } else {
-            SaveNb = randomNumber;
-            if (randomNumber == 0) {
-                RainSpike.SetBool("Start", true);
+            if (Phase == 0) {
+                shadowBossHit.CondiAttack = true;
+                shadowVesselHit.CondiAttack = true;
+                randomNumber2 = Random.Range(0, 2);
+                if (randomNumber2 == 0) {
+                    BossWalk.SetBool("Start", true);
+                }
+                if (randomNumber2 == 1) {
+                    BossWalk.SetBool("Start2", true);
+                }
+                NbAttack = 0;
+                StartCoroutine(Timer());
             }
-            if (randomNumber == 1) {
-                LeftSpike.SetBool("Start", true);
+            if (Phase == 1) {
+                shadowBossHit.CondiAttack = true;
+                shadowVesselHit.CondiAttack = true;
+                NbAttack = 0;
+                Drop.SetBool("Start", true);
+                StartCoroutine(Timer());
             }
-            if (randomNumber == 2) {
-                RightSpike.SetBool("Start", true);
-            }
-            if (randomNumber == 3) {
-                FloorSpike.SetBool("Start", true);
-            }
-            if (randomNumber == 4) {
-                ExplosionSpike.SetBool("Start", true);
-            }
-            if (randomNumber == 5) {
-                BossWalk.SetBool("Start", true);
-            }
-            StartCoroutine(Timer());
+        }
         }
     }
 
     IEnumerator Timer()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
+        Drop.SetBool("Start", false);
         ExplosionSpike.SetBool("Start", false);
         FloorSpike.SetBool("Start", false);
         RightSpike.SetBool("Start", false);
         LeftSpike.SetBool("Start", false);
         RainSpike.SetBool("Start", false);
         BossWalk.SetBool("Start", false);
+        BossWalk.SetBool("Start2", false);
     }
 }

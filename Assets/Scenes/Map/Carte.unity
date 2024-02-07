@@ -1824,7 +1824,7 @@ MonoBehaviour:
   - Scenes/monde 1/level_3
   - Scenes/monde 1/level_4
   - Scenes/monde 1/level_5
-  - Scenes/monde 1/level_6
+  - Scenes/monde 1/transi
   - Scenes/monde 2/level1
   - Scenes/monde 2/level2
   - Scenes/monde 2/level3
@@ -1857,7 +1857,9 @@ MonoBehaviour:
   - {fileID: 1982664334}
   - {fileID: 1292088413}
   - {fileID: 789220602}
-  world: 1
+  World1: {fileID: 9089822}
+  World2: {fileID: 914730466}
+  World3: {fileID: 1170537916}
 --- !u!61 &705797224
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3657,10 +3659,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41d15d9a6119bc94bbdd80f0e33cd360, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WorldIdle: {fileID: 9089822}
-  NextWorld: {fileID: 914730466}
-  Player: {fileID: 0}
-  Spawn: {fileID: 0}
+  WorldIdle: {fileID: 914730466}
+  NextWorld: {fileID: 1170537916}
+  Player: {fileID: 705797218}
+  Spawn: {fileID: 1575792357}
 --- !u!61 &1456038757
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3716,7 +3718,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1526276393}
   - component: {fileID: 1526276394}
-  - component: {fileID: 1526276395}
   m_Layer: 0
   m_Name: Block
   m_TagString: Untagged
@@ -3784,22 +3785,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1526276395
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1526276392}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41d15d9a6119bc94bbdd80f0e33cd360, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  WorldIdle: {fileID: 914730466}
-  NextWorld: {fileID: 9089822}
-  Player: {fileID: 705797218}
-  Spawn: {fileID: 545062369}
 --- !u!1 &1554427690
 GameObject:
   m_ObjectHideFlags: 0
