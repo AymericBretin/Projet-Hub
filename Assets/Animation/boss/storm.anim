@@ -22,19 +22,23 @@ AnimationClip:
     curve:
     - time: 0
       value: {fileID: -849346073, guid: fb1c952358403584693ca5a48207f624, type: 3}
-    - time: 0.06666667
+    - time: 0.033333335
+      value: {fileID: -849346073, guid: fb1c952358403584693ca5a48207f624, type: 3}
+    - time: 1
+      value: {fileID: -849346073, guid: fb1c952358403584693ca5a48207f624, type: 3}
+    - time: 1.1333333
       value: {fileID: -1051252851, guid: fb1c952358403584693ca5a48207f624, type: 3}
-    - time: 0.15
+    - time: 1.2
       value: {fileID: 49352368, guid: fb1c952358403584693ca5a48207f624, type: 3}
-    - time: 0.21666667
+    - time: 1.3
       value: {fileID: -1838957768, guid: fb1c952358403584693ca5a48207f624, type: 3}
-    - time: 0.3
+    - time: 1.4333333
       value: {fileID: -2121899872, guid: fb1c952358403584693ca5a48207f624, type: 3}
-    - time: 0.36666667
+    - time: 1.5333333
       value: {fileID: -1453744512, guid: fb1c952358403584693ca5a48207f624, type: 3}
-    - time: 0.45
+    - time: 1.6
       value: {fileID: -66110349, guid: fb1c952358403584693ca5a48207f624, type: 3}
-    - time: 0.51666665
+    - time: 1.7333333
       value: {fileID: 862458176, guid: fb1c952358403584693ca5a48207f624, type: 3}
     attribute: m_Sprite
     path: 
@@ -59,6 +63,8 @@ AnimationClip:
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
     - {fileID: -849346073, guid: fb1c952358403584693ca5a48207f624, type: 3}
+    - {fileID: -849346073, guid: fb1c952358403584693ca5a48207f624, type: 3}
+    - {fileID: -849346073, guid: fb1c952358403584693ca5a48207f624, type: 3}
     - {fileID: -1051252851, guid: fb1c952358403584693ca5a48207f624, type: 3}
     - {fileID: 49352368, guid: fb1c952358403584693ca5a48207f624, type: 3}
     - {fileID: -1838957768, guid: fb1c952358403584693ca5a48207f624, type: 3}
@@ -71,7 +77,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.5333333
+    m_StopTime: 1.7666667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -90,4 +96,39 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0
+    functionName: unset_colider_storm
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.0833334
+    functionName: set_colider_storm
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.7333333
+    functionName: unset_colider_storm
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.75
+    functionName: reset_kill
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.7666667
+    functionName: restart_storm
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

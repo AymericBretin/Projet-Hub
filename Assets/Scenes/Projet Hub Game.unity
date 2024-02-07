@@ -6631,7 +6631,7 @@ MonoBehaviour:
   waypoint:
   - {fileID: 1784164337}
   - {fileID: 1641610935}
-  weakSpot: {fileID: 763090381}
+  Condi: 1
   graph: {fileID: 1147030994}
 --- !u!1 &1318565937
 GameObject:
@@ -6881,7 +6881,7 @@ Transform:
   m_GameObject: {fileID: 1900544702}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.611202, y: -2.0819159, z: 0}
+  m_LocalPosition: {x: -42.84, y: -0.73, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8125,7 +8125,7 @@ Transform:
   m_GameObject: {fileID: 2111077601}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 27.51, y: 1.4, z: 0}
+  m_LocalPosition: {x: 24.72, y: 1.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

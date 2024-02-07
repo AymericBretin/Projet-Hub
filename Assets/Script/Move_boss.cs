@@ -1,13 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 
 public class Move_boss : MonoBehaviour
 {
     public float speed = 10;
     public Transform[] waypoint;
-
-    public WeakSpot weakSpot;
+    public bool Condi = true;  
     public SpriteRenderer graph;
     private Transform target;
     private int dest = 0;
@@ -19,7 +19,7 @@ public class Move_boss : MonoBehaviour
 
     void Update()
     {
-        if (weakSpot.count == 0)
+        if (Condi == true)
         {
             Vector3 dir = target.position - transform.position;
             transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
