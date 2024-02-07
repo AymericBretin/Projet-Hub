@@ -37985,7 +37985,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scenePaths:
   - Scenes/monde 1/level_6
-  - Scenes/monde 2/world2BOSS
+  - Scenes/monde 2/TRUE_world2BOSS
   - Scenes/monde 3/Boss World 3
 --- !u!1 &8990653638235096446
 GameObject:
