@@ -27,7 +27,10 @@ public class PauseMenu : MonoBehaviour
 
     void Paused()
     {
-        startGame.start = false;
+        Debug.Log("Pause");
+        if (startGame != null) {
+            startGame.start = false;
+        }
         pauseMenu.SetActive(true);
         Time.timeScale = 0;
         gamePaused = true;
@@ -35,7 +38,10 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
-        startGame.start = true;
+        Debug.Log("Resume");
+        if (startGame != null) {
+            startGame.start = true;
+        }
         pauseMenu.SetActive(false);
         Time.timeScale = 1;
         gamePaused = false;
@@ -43,11 +49,19 @@ public class PauseMenu : MonoBehaviour
 
     public void MainMenu()
     {
+        Debug.Log("MainMenu");
+        pauseMenu.SetActive(false);
+        Time.timeScale = 1;
+        gamePaused = false;
         SceneManager.LoadScene("Scenes/Menu/Menu", LoadSceneMode.Single);
     }
 
     public void WorldLevel()
     {
+        Debug.Log("WorldLevel");
+        pauseMenu.SetActive(false);
+        Time.timeScale = 1;
+        gamePaused = false;
         SceneManager.LoadScene("Scenes/Map/Carte", LoadSceneMode.Single);
     }
 }
