@@ -2685,6 +2685,7 @@ MonoBehaviour:
   - {fileID: 1572591852}
   hit: 1
   nb_hit: 0
+  Bat: {fileID: 289473823}
 --- !u!61 &289473827
 BoxCollider2D:
   m_ObjectHideFlags: 0

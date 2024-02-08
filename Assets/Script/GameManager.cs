@@ -11,6 +11,9 @@ public class GameManager : MonoBehaviour
     public GameObject player;
     public int Level_End = 1;
     public int world = 1;
+    public int TimeSecond = 0;
+    public int TimeMinute = 0;
+    public bool InGame = false;
 
     void Start()
     {
@@ -27,12 +30,27 @@ public class GameManager : MonoBehaviour
 
     public void PressStart()
     {
+        InGame = true;
         StartCoroutine(GoCinematique());
+        StartCoroutine(IGTimer());
     }
     IEnumerator GoCinematique ()
     {
         SceneManager.LoadScene(scenePaths[1], LoadSceneMode.Single);
         yield return new WaitForSeconds(3);
         SceneManager.LoadScene(scenePaths[0], LoadSceneMode.Single);
+    }
+
+    IEnumerator IGTimer ()
+    {
+        yield return new WaitForSeconds(1);
+        TimeSecond += 1;
+        if (TimeSecond == 60) {
+            TimeSecond = 0;
+            TimeMinute += 1;
+        }
+        if (InGame == true) {
+            StartCoroutine(IGTimer());
+        }
     }
 }

@@ -11,6 +11,7 @@ public class ShadowVesselHit : MonoBehaviour
     public BossFight bossFight;
     public Animator End;
     public bool EndBoss = false;
+    public Animator Anim;
 
     // Start is called before the first frame update
     void Start()
@@ -42,6 +43,10 @@ public class ShadowVesselHit : MonoBehaviour
             Vie[2].SetActive(false);
         }
     }
+    public void HitBoss()
+    {
+        Anim.SetBool("Hit", false);
+    }
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player") && CondiAttack == true)
@@ -49,6 +54,7 @@ public class ShadowVesselHit : MonoBehaviour
             CondiAttack = false;
             Debug.Log("HIT");
             BossHealth -= 1;
+            Anim.SetBool("Hit", true);
             if (BossHealth == 0) {
                 EndBoss = true;
                 End.SetBool("Start", true);
@@ -59,6 +65,7 @@ public class ShadowVesselHit : MonoBehaviour
     IEnumerator Timer()
     {
         yield return new WaitForSeconds(1f);
+        Anim.SetBool("Hit", false);
         CondiAttack = true;
     }
 }

@@ -20,5 +20,8 @@ public class stop_cam : MonoBehaviour
         if (other.name == "Complete Level 5 World 1") {
             Move_Ca.cam = false;
         }
+        if (other.name == "Door Boss 2") {
+            Move_Ca.cam = false;
+        }
     }
 }

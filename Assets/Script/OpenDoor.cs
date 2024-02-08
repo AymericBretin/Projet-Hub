@@ -12,6 +12,7 @@ public class OpenDoor : MonoBehaviour
     public bool Door3;
     public GameObject GameManager;
     public Animator GameAnimator;
+    public GameObject Text;
     void Start()
     {
         GameManager = GameObject.Find("GameManager");
@@ -44,12 +45,15 @@ public class OpenDoor : MonoBehaviour
     {
         if (other.name == "Door Boss 1")
         {
+            Text.SetActive(true);
             Door1 = true;
         } else if (other.name == "Door Boss 2")
         {
+            Text.SetActive(true);
             Door2 = true;
         } else if (other.name == "Door Boss 3")
         {
+            Text.SetActive(true);
             Door3 = true;
         }
     }
@@ -57,12 +61,15 @@ public class OpenDoor : MonoBehaviour
     {
         if (other.name == "Door Boss 1")
         {
+            Text.SetActive(false);
             Door1 = false;
         } else if (other.name == "Door Boss 2")
         {
+            Text.SetActive(false);
             Door2 = false;
         } else if (other.name == "Door Boss 3")
         {
+            Text.SetActive(false);
             Door3 = false;
         }
     }

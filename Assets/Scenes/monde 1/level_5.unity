@@ -85059,27 +85059,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &2539766505083451517
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5162545366529205927}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d89d6550fa87e3a42b5a73be9e640ffa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Check_point: {fileID: 1057314196}
-  healthBar: {fileID: 5571164809424574593}
-  Player: {fileID: 0}
-  rb: {fileID: 0}
-  changeGravity: {fileID: 0}
-  playerMovement: {fileID: 0}
-  PlayerParticle: {fileID: 0}
-  particleBurst: {fileID: 0}
-  Time: 0
 --- !u!4 &3050458513038632551
 Transform:
   m_ObjectHideFlags: 0
@@ -85398,8 +85377,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4707107360339058447}
-  - component: {fileID: 2539766505083451517}
   - component: {fileID: 8819933472108796010}
+  - component: {fileID: 8819933472108796011}
   m_Layer: 0
   m_Name: kill_zone
   m_TagString: Untagged
@@ -86062,6 +86041,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &8819933472108796011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5162545366529205927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c206d7cf3328521488547d4b8725bf30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Check_point: {fileID: 1057314196}
+  healthBar: {fileID: 5571164809424574593}
+  Player: {fileID: 0}
+  rb: {fileID: 0}
+  changeGravity: {fileID: 0}
+  playerMovement: {fileID: 0}
+  PlayerParticle: {fileID: 0}
+  particleBurst: {fileID: 0}
+  Time: 0
 --- !u!224 &8863646142801069392
 RectTransform:
   m_ObjectHideFlags: 0

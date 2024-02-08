@@ -6,6 +6,7 @@ public class world2_boss : MonoBehaviour
     public GameObject[] Vie;
     public bool hit = true;
     public int nb_hit = 0;
+    public Animator Bat;
 
     void Start()
     {
@@ -55,6 +56,7 @@ public class world2_boss : MonoBehaviour
         if (other.gameObject.tag == "Player" && hit == true)
         {
             hit = false;
+            Bat.SetBool("Hit", true);
             if (nb_hit > 2)
             {
                 print("dead");
@@ -62,6 +64,10 @@ public class world2_boss : MonoBehaviour
             nb_hit += 1;
             StartCoroutine(Timer());
         }
+    }
+    public void BatOff()
+    {
+        Bat.SetBool("Hit", false);
     }
     IEnumerator Timer()
     {
