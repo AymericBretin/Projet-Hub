@@ -20883,11 +20883,37 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 5.62
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1788131553441991413, guid: ad991e8cd97f80c4aaee43bf10af52df, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5849177157422470255, guid: ad991e8cd97f80c4aaee43bf10af52df, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 204307338}
   m_SourcePrefab: {fileID: 100100000, guid: ad991e8cd97f80c4aaee43bf10af52df, type: 3}
+--- !u!1 &204307337 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5849177157422470255, guid: ad991e8cd97f80c4aaee43bf10af52df, type: 3}
+  m_PrefabInstance: {fileID: 204307336}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &204307338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 204307337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 074fc6005785cd543a638f1146dd6feb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  Player: {fileID: 0}
+  PlayerParticle: {fileID: 0}
+  particleBurst: {fileID: 0}
+  Time: 0
 --- !u!1001 &246602966
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24194,6 +24220,14 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: -5
       objectReference: {fileID: 0}
+    - target: {fileID: 2491765620132054762, guid: 41666da22f3f57746b57856f56ea0eef, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4.186494
+      objectReference: {fileID: 0}
+    - target: {fileID: 2491765620132054762, guid: 41666da22f3f57746b57856f56ea0eef, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0084
+      objectReference: {fileID: 0}
     - target: {fileID: 3050458513866221668, guid: 41666da22f3f57746b57856f56ea0eef, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13
@@ -24381,6 +24415,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0dbbe4a9924cfed49ae6f8e52ca782b8, type: 3}
+--- !u!1001 &1047274338
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1646145793562116729, guid: 34bdda16c91a3604989d3b90cb2cada5, type: 3}
+      propertyPath: m_Name
+      value: Particle Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5402140373348477411, guid: 34bdda16c91a3604989d3b90cb2cada5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5402140373348477411, guid: 34bdda16c91a3604989d3b90cb2cada5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.139
+      objectReference: {fileID: 0}
+    - target: {fileID: 5402140373348477411, guid: 34bdda16c91a3604989d3b90cb2cada5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 62.834713
+      objectReference: {fileID: 0}
+    - target: {fileID: 5402140373348477411, guid: 34bdda16c91a3604989d3b90cb2cada5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5402140373348477411, guid: 34bdda16c91a3604989d3b90cb2cada5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5402140373348477411, guid: 34bdda16c91a3604989d3b90cb2cada5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5402140373348477411, guid: 34bdda16c91a3604989d3b90cb2cada5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5402140373348477411, guid: 34bdda16c91a3604989d3b90cb2cada5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5402140373348477411, guid: 34bdda16c91a3604989d3b90cb2cada5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5402140373348477411, guid: 34bdda16c91a3604989d3b90cb2cada5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 34bdda16c91a3604989d3b90cb2cada5, type: 3}
 --- !u!1 &1057314196
 GameObject:
   m_ObjectHideFlags: 0
@@ -28112,11 +28203,37 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 5.02
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1788131553441991413, guid: ad991e8cd97f80c4aaee43bf10af52df, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5849177157422470255, guid: ad991e8cd97f80c4aaee43bf10af52df, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1376246674}
   m_SourcePrefab: {fileID: 100100000, guid: ad991e8cd97f80c4aaee43bf10af52df, type: 3}
+--- !u!1 &1376246673 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5849177157422470255, guid: ad991e8cd97f80c4aaee43bf10af52df, type: 3}
+  m_PrefabInstance: {fileID: 1376246672}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1376246674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376246673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 074fc6005785cd543a638f1146dd6feb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  Player: {fileID: 0}
+  PlayerParticle: {fileID: 0}
+  particleBurst: {fileID: 0}
+  Time: 0
 --- !u!1001 &1426372140
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37319,3 +37436,4 @@ SceneRoots:
   - {fileID: 1125473481}
   - {fileID: 1374018852}
   - {fileID: 993220044}
+  - {fileID: 1047274338}

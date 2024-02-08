@@ -13,12 +13,19 @@ public class tornado_kill : MonoBehaviour
     public PlayerMovement playerMovement;
     public tornado_maker Tornado_Maker;
     public int Time = 0;
+    public GameObject PlayerParticle;
+    public ParticleSystem particleBurst;
     void Start()
     {
         Player = GameObject.Find("Player");
         rb = Player.GetComponent<Rigidbody2D>();
         changeGravity = FindObjectOfType<ChangeGravity>();
         playerMovement = FindObjectOfType<PlayerMovement>();
+        healthBar = FindObjectOfType<HealthBar>();
+        PlayerParticle = GameObject.Find("Particle Player");
+        if (PlayerParticle != null) {
+                particleBurst = PlayerParticle.GetComponent<ParticleSystem>();
+            }
     }
 
     void Update()
@@ -30,12 +37,14 @@ public class tornado_kill : MonoBehaviour
         if (Tornado_Maker.set_kill == true && other.gameObject.tag == "Player" && Time == 0)
         {
             Time = 1;
+            if (particleBurst != null) {
+                particleBurst.Emit(1);
+            }
             Tornado_Maker.set_kill = false;
             Debug.Log("kill");
             playerMovement.onFloor = true;
             rb.velocity = Vector3.zero;
             healthBar.Health -= 1;
-            other.transform.position = new Vector3(Check_point.transform.position.x, Check_point.transform.position.y, Check_point.transform.position.z);
             StartCoroutine(Timer());
             if (healthBar.Health == -1)
             {

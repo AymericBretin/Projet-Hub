@@ -22,6 +22,8 @@ public class MoveOnMap : MonoBehaviour
     public GameManager gameManager;
     public GameObject[] Cadenas;
     public GameObject World1, World2, World3;
+    public Transform Pos1, Pos2, Pos3, Pos4, Pos5, Pos6;
+    public GameObject Player;
     void Start()
     {
         gameManager = FindObjectOfType<GameManager>();
@@ -51,6 +53,24 @@ public class MoveOnMap : MonoBehaviour
             World1.SetActive(false);
             World2.SetActive(false);
             World3.SetActive(true);
+        }
+        if (gameManager.Level_End == 2 || gameManager.Level_End == 8 || gameManager.Level_End == 14) {
+            Player.transform.position = Pos1.position;
+        }
+        if (gameManager.Level_End == 3 || gameManager.Level_End == 9 || gameManager.Level_End == 15) {
+            Player.transform.position = Pos2.position;
+        }
+        if (gameManager.Level_End == 4 || gameManager.Level_End == 10 || gameManager.Level_End == 16) {
+            Player.transform.position = Pos3.position;
+        }
+        if (gameManager.Level_End == 5 || gameManager.Level_End == 11 || gameManager.Level_End == 17) {
+            Player.transform.position = Pos4.position;
+        }
+        if (gameManager.Level_End == 6 || gameManager.Level_End == 12 || gameManager.Level_End == 18) {
+            Player.transform.position = Pos5.position;
+        }
+        if (gameManager.Level_End == 7 || gameManager.Level_End == 13 || gameManager.Level_End == 19) {
+            Player.transform.position = Pos6.position;
         }
     }
 

@@ -8,11 +8,13 @@ public class BlackSpike : MonoBehaviour
     public HealthBar healthBar;
     public BossFight bossFight;
     public ShadowBossHit shadowBossHit;
+    public ParticleSystem particleBurst;
     void Start()
     {
         healthBar = FindObjectOfType<HealthBar>();
         bossFight = FindObjectOfType<BossFight>();
         shadowBossHit = FindObjectOfType<ShadowBossHit>();
+        particleBurst = FindObjectOfType<ParticleSystem>();
     }
 
     // Update is called once per frame
@@ -25,6 +27,7 @@ public class BlackSpike : MonoBehaviour
     {
         if (other.gameObject.tag == "Player" && bossFight.PlayerCanBeHit == true)
         {
+            particleBurst.Emit(1);
             bossFight.PlayerCanBeHit = false;
             healthBar.Health -= 1;
             Debug.Log("Hit");
