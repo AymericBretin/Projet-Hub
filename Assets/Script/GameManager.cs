@@ -14,6 +14,10 @@ public class GameManager : MonoBehaviour
     public int TimeSecond = 0;
     public int TimeMinute = 0;
     public bool InGame = false;
+    public bool Training = false;
+    public GameObject Menu, Menu2;
+    public GameObject GameSelection;
+
 
     void Start()
     {
@@ -30,9 +34,36 @@ public class GameManager : MonoBehaviour
 
     public void PressStart()
     {
+        Menu.SetActive(false);
+        Menu2.SetActive(false);
+        if (Level_End == 1) {
+            GameSelection.SetActive(true);
+        } else {
+            SceneManager.LoadScene(scenePaths[2], LoadSceneMode.Single);
+        }
+    }
+
+    public void CampaignStart()
+    {
         InGame = true;
-        StartCoroutine(GoCinematique());
         StartCoroutine(IGTimer());
+        if (Level_End == 1) {
+            StartCoroutine(GoCinematique());
+        } else {
+            SceneManager.LoadScene(scenePaths[2], LoadSceneMode.Single);
+        }
+    }
+
+    public void TrainingStart()
+    {
+        InGame = true;
+        StartCoroutine(IGTimer());
+        Training = true;
+        if (Level_End == 1) {
+            StartCoroutine(GoCinematique());
+        } else {
+            SceneManager.LoadScene(scenePaths[2], LoadSceneMode.Single);
+        }
     }
     IEnumerator GoCinematique ()
     {
